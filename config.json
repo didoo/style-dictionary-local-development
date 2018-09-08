@@ -29,6 +29,15 @@
       }]
     },
 
+    "sketch": {
+      "transformGroup": "web",
+      "buildPath": "build/sketch/",
+      "files": [{
+        "destination": "_variables.sketch",
+        "format": "sketch/palette"
+      }]
+    },
+
     "json": {
       "transformGroup": "js",
       "buildPath": "build/json/",
