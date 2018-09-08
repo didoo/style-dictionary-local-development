@@ -3,9 +3,17 @@
     "properties/**/*.json"
   ],
   "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [{
+        "destination": "_variables.scss",
+        "format": "scss/variables"
+      }]
+    },
     "ios": {
       "transformGroup": "ios",
-      "buildPath": "ios/Classes/Generated/",
+      "buildPath": "build/ios/Classes/Generated/",
       "prefix": "StyleDictionary",
       "files": [{
         "destination": "StyleDictionarySize.h",
@@ -80,7 +88,7 @@
 
     "android": {
       "transformGroup": "android",
-      "buildPath": "android/styledictionary/src/main/res/values/",
+      "buildPath": "build/android/styledictionary/src/main/res/values/",
       "files": [{
         "destination": "style_dictionary_colors.xml",
         "template": "android/colors"
@@ -107,37 +115,6 @@
         "format": "json"
       }],
       "actions": ["copy_assets"]
-    },
-
-    "staticStyleGuide-html":{
-      "buildPath": "static-style-guide/public/",
-      "files": [
-        {
-          "destination": "index.html",
-          "template": "static-style-guide/index.html"
-        }
-      ],
-      "actions": ["copy_assets"]
-    },
-    "staticStyleGuide-js": {
-      "transformGroup": "web",
-      "buildPath": "static-style-guide/public/js/",
-      "files": [{
-        "name": "__style_properties",
-        "destination": "style-dictionary-properties.js",
-        "format": "javascript/object"
-      }]
-    },
-    "staticStyleGuide-css": {
-      "transformGroup": "scss",
-      "buildPath": "static-style-guide/public/css/",
-      "files": [{
-        "destination": "fonts.css",
-        "template": "css/fonts.css"
-      },{
-        "destination": "variables.css",
-        "format": "css/variables"
-      }]
     }
   }
 }
