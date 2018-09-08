@@ -3,7 +3,8 @@
     "properties/**/*.json"
   ],
   "platforms": {
-    "scss": {
+
+    "scss-variables": {
       "transformGroup": "scss",
       "buildPath": "build/scss/",
       "files": [{
@@ -11,6 +12,56 @@
         "format": "scss/variables"
       }]
     },
+    "less-variables": {
+      "transformGroup": "web",
+      "buildPath": "build/less/",
+      "files": [{
+        "destination": "_variables.less",
+        "format": "less/variables"
+      }]
+    },
+    "css-variables": {
+      "transformGroup": "css",
+      "buildPath": "build/css/",
+      "files": [{
+        "destination": "_variables.css",
+        "format": "css/variables"
+      }]
+    },
+
+    "json": {
+      "transformGroup": "js",
+      "buildPath": "build/json/",
+      "files": [{
+        "destination": "_variables.json",
+        "format": "json"
+      }]
+    },
+    "js-module": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [{
+        "destination": "_variables-module.js",
+        "format": "javascript/module"
+      }]
+    },
+    "js-object": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [{
+        "destination": "_variables-object.js",
+        "format": "javascript/object"
+      }]
+    },
+    "js-es6": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [{
+        "destination": "_variables-es6.js",
+        "format": "javascript/es6"
+      }]
+    },
+
     "ios": {
       "transformGroup": "ios",
       "buildPath": "build/ios/Classes/Generated/",
@@ -105,16 +156,7 @@
         "destination": "style_dictionary_strings.xml",
         "template": "android/strings"
       }]
-    },
-
-    "android-asset": {
-      "transformGroup": "android",
-      "buildPath": "android/styledictionary/src/main/",
-      "files": [{
-        "destination": "assets/data/properties.json",
-        "format": "json"
-      }],
-      "actions": ["copy_assets"]
     }
+
   }
 }
