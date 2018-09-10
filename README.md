@@ -1,4 +1,4 @@
-# style-dictionary-development
+# style-dictionary-local-development
 This is a simple repo that contains a setup of Style Dictionary that can be used when developing the library itself, in your local machine.
 
 ## setup
