@@ -10,7 +10,11 @@
       "files": [{
         "destination": "_variables.scss",
         "format": "scss/variables"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
     "less-variables": {
       "transformGroup": "web",
@@ -18,7 +22,11 @@
       "files": [{
         "destination": "_variables.less",
         "format": "less/variables"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
     "css-variables": {
       "transformGroup": "css",
@@ -26,16 +34,24 @@
       "files": [{
         "destination": "_variables.css",
         "format": "css/variables"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
 
     "sketch": {
       "transformGroup": "web",
       "buildPath": "build/sketch/",
       "files": [{
-        "destination": "_variables.sketch",
+        "destination": "_variables.sketchpalette",
         "format": "sketch/palette"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
 
     "json": {
@@ -44,7 +60,11 @@
       "files": [{
         "destination": "_variables.json",
         "format": "json"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
     "js-module": {
       "transformGroup": "js",
@@ -52,7 +72,11 @@
       "files": [{
         "destination": "_variables-module.js",
         "format": "javascript/module"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
     "js-object": {
       "transformGroup": "js",
@@ -60,7 +84,11 @@
       "files": [{
         "destination": "_variables-object.js",
         "format": "javascript/object"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
     "js-es6": {
       "transformGroup": "js",
@@ -68,7 +96,11 @@
       "files": [{
         "destination": "_variables-es6.js",
         "format": "javascript/es6"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
 
     "ios": {
@@ -76,6 +108,9 @@
       "buildPath": "build/ios/Classes/Generated/",
       "prefix": "StyleDictionary",
       "files": [{
+        "destination": "StyleDictionary.plist",
+        "template": "ios/plist"
+      },{
         "destination": "StyleDictionarySize.h",
         "template": "ios/static.h",
         "type": "float",
@@ -143,7 +178,11 @@
         "destination": "StyleDictionaryProperties.m",
         "template": "ios/singleton.m",
         "className": "StyleDictionaryProperties"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     },
 
     "android": {
@@ -164,7 +203,11 @@
      },{
         "destination": "style_dictionary_strings.xml",
         "template": "android/strings"
-      }]
+      }],
+      "options": {
+        "hideDoNotEdit": true,
+        "hideTimestamp": true
+      }
     }
 
   }

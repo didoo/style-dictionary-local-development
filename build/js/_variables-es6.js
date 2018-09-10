@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Sat Sep 08 2018 15:33:07 GMT+0100 (BST)
- */
-
 export const AssetFontIconName = "MaterialIcons";
 export const AssetFontIconTtf = "assets/fonts/MaterialIcons-Regular.ttf";
 export const AssetFontIconEot = "assets/fonts/MaterialIcons-Regular.eot";
